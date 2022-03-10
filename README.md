@@ -20,6 +20,8 @@ Vilim Trakoštanec |  vtrakosta20@foi.hr  | 0016150912  |      vtrakosta20
 
 ## Opis domene
 Umjesto ovih uputa vlastitim riječima opišite domenu ili problem koji pokriva projekt za vaše zadaće. 
+----------------------------------------------------------------------------------------------------
+
 
 ## Specifikacija projekta
 Umjesto ovih uputa vlastitim riječima opišite zahtjeve za funkcionalnošću programskog proizvoda.
