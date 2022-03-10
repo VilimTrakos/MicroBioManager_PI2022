@@ -13,9 +13,9 @@ A sada, vrijeme je da malo izmijenite ovaj dokument. Za upis/opis vašeg program
 ## Podaci o studentu
 (ispod promijenite samo drugi redak tablice)
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Ime i prezime     |  E-mail adresa (FOI) |    JMBAG    | Github korisničko ime
+----------------  |  ------------------  | ----------- | ---------------------
+Vilim Trakoštanec |  vtrakosta20@foi.hr  | 0016150912  |      vtrakosta20
 
 
 ## Opis domene
