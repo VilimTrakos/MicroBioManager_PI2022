@@ -32,7 +32,7 @@ Softversko rješenje bi se zvalo MicroBio Manager s obzirom na to da se bavi mik
 Umjesto ovih uputa vlastitim riječima opišite zahtjeve za funkcionalnošću programskog proizvoda.
 
 ## Zadatak
-U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje.
+https://github.com/foivz/pi22-zadace-vtrakosta20/blob/master/Korisni%C4%8Dki%20zahtjevi%20ZS%20-%20mikrobiolo%C5%A1ki%20laboratorij.pdf
 
 ## Resursi
 Github Markdown sintaksa dostupna je na [ovom linku](https://guides.github.com/features/mastering-markdown/) ali i na Moodleu u sekciji Zadaće.
