@@ -26,14 +26,10 @@ Najveći problem kod ovog rješenja je ako dođe do pogrešnog rada OCR tehnolog
 Softversko rješenje bi se zvalo MicroBio Manager s obzirom na to da se bavi mikrobiološkom analizom. Softver bi bio potpuno novo programsko rješenje, koje neće pratiti uzorke koji nemaju pridružen QR/bar kod. Također se neće moći voditi evidencija drugih uzoraka poput stolice ili sline.
 
 
-
-
 ## Specifikacija projekta
-Umjesto ovih uputa vlastitim riječima opišite zahtjeve za funkcionalnošću programskog proizvoda.
+MicroBio Manager je softversko riješenje za digitalizaciju radnog naloga u mikrobiološkom laboratoriju. Sustav omogućava prijavu, izradu novog radnog naloga i izradu novog pacijenta. Sustav može djelomično automatski pohranjivati podatke u radni nalog pomoću OCR tehnologije, ali također omogućava ručni unos i ispravljanje rezultata analize u slučaju pogreške OCR tehnologije. Specijalisti imaju mogućnost  dodaovanja komentara za rezultate analize. Sustav može prikazati statistiku rezutltata pretraga za pacijenta i može prikazati statittiku poslovanja. 
 
 ## Zadatak
 https://github.com/foivz/pi22-zadace-vtrakosta20/blob/master/Korisni%C4%8Dki%20zahtjevi%20ZS%20-%20mikrobiolo%C5%A1ki%20laboratorij.pdf
 
-## Resursi
-Github Markdown sintaksa dostupna je na [ovom linku](https://guides.github.com/features/mastering-markdown/) ali i na Moodleu u sekciji Zadaće.
-Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete trabati na wiki stranicama smjestite u mapu dokumentacije u repozitoriju. 
+
