@@ -75,7 +75,7 @@
             this.btnNoviPacijent.TabIndex = 6;
             this.btnNoviPacijent.Text = "Dodaj pacijenta";
             this.btnNoviPacijent.UseVisualStyleBackColor = true;
-         //   this.btnNoviPacijent.Click += new System.EventHandler(this.btnNoviPacijent_Click);
+            this.btnNoviPacijent.Click += new System.EventHandler(this.btnNoviPacijent_Click);
             // 
             // btnNalog
             // 
