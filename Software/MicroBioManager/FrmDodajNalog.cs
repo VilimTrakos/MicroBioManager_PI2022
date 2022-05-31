@@ -22,6 +22,9 @@ namespace MicroBioManager
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            FrmPocetna frmPocetna = new FrmPocetna();
+            Hide();
+            frmPocetna.ShowDialog();
             Close();
         }
         

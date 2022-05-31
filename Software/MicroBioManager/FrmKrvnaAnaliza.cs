@@ -64,6 +64,9 @@ namespace MicroBioManager
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            FrmPocetna frmPocetna = new FrmPocetna();
+            Hide();
+            frmPocetna.ShowDialog();
             Close();
         }
 
@@ -315,17 +318,6 @@ namespace MicroBioManager
                 DB.CloseConnection();
             }
 
-
-            /*
-            string sql = $"" +
-                $"UPDATE RezultatiDB SET Sifra_pacijenta ={sifra_pacijenta}, Uzorak ='{"Krv"}',  Eritrociti={eritrociti}" +
-                $", Leukociti= {leukociti}, MCV={mcv}, MCH={mch}, MCHC={mchc}, RDW={rdw}, MPV={mpv}, PDW={pdw}, EOS={eos}," +
-                $" LYM={lym}, BASO={baso}, PLT={plt}, NEU={neu}, Bazofili={bazofili}, Monociti={monociti}, Limfociti={limfociti}," +
-                $" Hemoglobin={hemoglobin}, Hematokrit={hematokrit}, Neutroliti={neutroliti}, Eozinofili ={eozinofili} WHERE Id = {nalog.Id_rezultata} ";
-            DB.SetConfiguration("vtrakosta20_DB", "vtrakosta20", "6}m#UWqL");
-            DB.OpenConnection();
-            DB.ExecuteCommand(sql);
-            DB.CloseConnection();*/
         }
     }
 }

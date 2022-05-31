@@ -30,6 +30,9 @@ namespace MicroBioManager
 
         private void FrmAnalizaUrina_Load(object sender, EventArgs e)
         {
+            var komentari = NalogRepos.GetNalogeId(oznaceniNalog.Id);
+            rtxtKomentari.Text = komentari.Komentari;
+
             var rezultati = RezultatiRepos.GetRezultati(oznaceniNalog.Id_rezultata);
             Pacijent.Text = oznaceniNalog.Sifra_pacijenta.ToString();
             SifraNaloga.Text = oznaceniNalog.Id.ToString();
@@ -52,8 +55,8 @@ namespace MicroBioManager
 
         private void SaveUr_Click(object sender, EventArgs e)
         {
+            var komentari = rtxtKomentari.Text;
             var sifra_pacijent = Pacijent.Text;
-            var sifra_nalog = SifraNaloga.Text;
             var glukoza = Glukoza.Text;
             var bilirubin = Bilirubin.Text;
             var ketoni = Ketoni.Text;
@@ -69,6 +72,15 @@ namespace MicroBioManager
             var urea = Urea.Text;
             var kristali_ko = Kristali_KO.Text;
 
+
+            if (komentari != "")
+            {
+                string sql1 = $"Update NaloziDB SET Komentari = '{komentari}' WHERE Id ={nalog.Id}";
+                DB.SetConfiguration("vtrakosta20_DB", "vtrakosta20", "6}m#UWqL");
+                DB.OpenConnection();
+                DB.ExecuteCommand(sql1);
+                DB.CloseConnection();
+            }
             if (eritrociti != "")
             {
                 string sql1 = $"Update RezultatiDB SET Sifra_pacijenta = {sifra_pacijent}, Uzorak ='{"Urin"}', Eritrociti ={eritrociti}" +
@@ -198,6 +210,9 @@ namespace MicroBioManager
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
+            FrmPocetna frmPocetna = new FrmPocetna();
+            Hide();
+            frmPocetna.ShowDialog();
             Close();
         }
     }

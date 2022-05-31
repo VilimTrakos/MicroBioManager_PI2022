@@ -62,6 +62,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.rtxtKomentari = new System.Windows.Forms.RichTextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Glukoza
@@ -306,7 +308,7 @@
             // 
             // SaveUr
             // 
-            this.SaveUr.Location = new System.Drawing.Point(458, 292);
+            this.SaveUr.Location = new System.Drawing.Point(458, 144);
             this.SaveUr.Name = "SaveUr";
             this.SaveUr.Size = new System.Drawing.Size(168, 33);
             this.SaveUr.TabIndex = 43;
@@ -334,7 +336,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(458, 340);
+            this.btnClose.Location = new System.Drawing.Point(458, 192);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(167, 49);
             this.btnClose.TabIndex = 48;
@@ -342,11 +344,30 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // rtxtKomentari
+            // 
+            this.rtxtKomentari.Location = new System.Drawing.Point(179, 271);
+            this.rtxtKomentari.Name = "rtxtKomentari";
+            this.rtxtKomentari.Size = new System.Drawing.Size(456, 159);
+            this.rtxtKomentari.TabIndex = 49;
+            this.rtxtKomentari.Text = "";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(58, 274);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 16);
+            this.label11.TabIndex = 50;
+            this.label11.Text = "Komentari:";
+            // 
             // FrmAnalizaUrina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 450);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.rtxtKomentari);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -425,5 +446,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.RichTextBox rtxtKomentari;
+        private System.Windows.Forms.Label label11;
     }
 }

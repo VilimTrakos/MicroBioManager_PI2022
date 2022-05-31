@@ -50,12 +50,16 @@ namespace MicroBioManager
                 if (oznaceniNalog.Uzorak == "Urin")
                 {
                     FrmAnalizaUrina frmAnalizaUrina = new FrmAnalizaUrina(oznaceniNalog);
+                    Hide();
                     frmAnalizaUrina.ShowDialog();
+                    Close();
                 }
                 else
                 {
                     FrmKrvnaAnaliza frmKrvnaAnaliza = new FrmKrvnaAnaliza(oznaceniNalog);
+                    Hide();
                     frmKrvnaAnaliza.ShowDialog();
+                    Close();
                 }
 
             }
