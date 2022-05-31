@@ -47,16 +47,16 @@ namespace MicroBioManager
             Nalog oznaceniNalog = dgvPopisNaloga.CurrentRow.DataBoundItem as Nalog;
             if (oznaceniNalog != null)
             {
-           /*     if (oznaceniNalog.Uzorak == "Urin")
+                if (oznaceniNalog.Uzorak == "Urin")
                 {
                     FrmAnalizaUrina frmAnalizaUrina = new FrmAnalizaUrina(oznaceniNalog);
                     frmAnalizaUrina.ShowDialog();
                 }
                 else
-                {*/
+                {
                     FrmKrvnaAnaliza frmKrvnaAnaliza = new FrmKrvnaAnaliza(oznaceniNalog);
                     frmKrvnaAnaliza.ShowDialog();
-                /*}*/
+                }
 
             }
         }
