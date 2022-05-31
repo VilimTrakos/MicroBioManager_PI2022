@@ -55,7 +55,7 @@
             this.OtvoriNalog.TabIndex = 1;
             this.OtvoriNalog.Text = "Otvori nalog";
             this.OtvoriNalog.UseVisualStyleBackColor = true;
-           // this.OtvoriNalog.Click += new System.EventHandler(this.OtvoriNalog_Click);
+            this.OtvoriNalog.Click += new System.EventHandler(this.OtvoriNalog_Click);
             // 
             // btnPretraga
             // 

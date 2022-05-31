@@ -54,6 +54,12 @@
     <Compile Include="Classes\Person.cs" />
     <Compile Include="Classes\Rezultati.cs" />
     <Compile Include="Classes\Zaposlenik.cs" />
+    <Compile Include="FrmKrvnaAnaliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKrvnaAnaliza.designer.cs">
+      <DependentUpon>FrmKrvnaAnaliza.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Repos\PacijentRepos.cs" />
     <Compile Include="Repos\RezultatiRepos.cs" />
     <Compile Include="Repos\ZaposlenikRepos.cs" />
+    <EmbeddedResource Include="FrmKrvnaAnaliza.resx">
+      <DependentUpon>FrmKrvnaAnaliza.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
