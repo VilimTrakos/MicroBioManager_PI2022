@@ -60,6 +60,12 @@
     <Compile Include="FrmAnalizaUrina.designer.cs">
       <DependentUpon>FrmAnalizaUrina.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDodajNalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajNalog.designer.cs">
+      <DependentUpon>FrmDodajNalog.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmKrvnaAnaliza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Repos\ZaposlenikRepos.cs" />
     <EmbeddedResource Include="FrmAnalizaUrina.resx">
       <DependentUpon>FrmAnalizaUrina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodajNalog.resx">
+      <DependentUpon>FrmDodajNalog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmKrvnaAnaliza.resx">
       <DependentUpon>FrmKrvnaAnaliza.cs</DependentUpon>

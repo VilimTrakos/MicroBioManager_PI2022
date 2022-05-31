@@ -85,7 +85,7 @@
             this.btnNalog.TabIndex = 7;
             this.btnNalog.Text = "Dodaj nalog";
             this.btnNalog.UseVisualStyleBackColor = true;
-         //   this.btnNalog.Click += new System.EventHandler(this.btnNalog_Click);
+            this.btnNalog.Click += new System.EventHandler(this.btnNalog_Click);
             // 
             // FrmPocetna
             // 

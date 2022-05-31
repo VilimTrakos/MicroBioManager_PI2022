@@ -72,7 +72,7 @@ namespace MicroBioManager
             FrmNoviPacijent frmNoviPacijent = new FrmNoviPacijent();
             frmNoviPacijent.ShowDialog();
         }
-  /*      
+       
         private void btnNalog_Click(object sender, EventArgs e)
         {
             FrmDodajNalog frmDodajNalog = new FrmDodajNalog();
@@ -81,6 +81,6 @@ namespace MicroBioManager
             Close();
 
         }
-*/
+
     }
 }
