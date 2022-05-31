@@ -65,7 +65,7 @@
             this.btnPretraga.TabIndex = 5;
             this.btnPretraga.Text = "Pretraga";
             this.btnPretraga.UseVisualStyleBackColor = true;
-           // this.btnPretraga.Click += new System.EventHandler(this.btnPretraga_Click);
+            this.btnPretraga.Click += new System.EventHandler(this.btnPretraga_Click);
             // 
             // btnNoviPacijent
             // 
