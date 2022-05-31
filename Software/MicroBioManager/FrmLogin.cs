@@ -36,8 +36,11 @@ namespace MicroBioManager
                 if (zaposlenik!=null && txtPassword.Text == zaposlenik.Password)
                 {
                     LoggedZaposlenik = zaposlenik;
-                    MessageBox.Show("Login uspješan!", "Uspjeh", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                    
+                    FrmPocetna frmPocetna = new FrmPocetna();
+                    Hide();
+                    frmPocetna.ShowDialog();
+                    Close();
                 }
                 else
                 {
