@@ -11,6 +11,25 @@ namespace MicroBioManager.Repos
 {
     public class NalogRepos
     {
+        public static Nalog GetNalogeId(int id)
+        {
+            Nalog nalozi = null;
+            string sql = $"SELECT * FROM NaloziDB WHERE Id = {id}";
+            DB.SetConfiguration("vtrakosta20_DB", "vtrakosta20", "6}m#UWqL");
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            if (reader.HasRows)
+            {
+                reader.Read();
+                nalozi = CreateObject(reader);
+                reader.Close();
+            }
+
+
+            DB.CloseConnection();
+
+            return nalozi;
+        }
         public static List<Nalog> GetNalogeSifra(int sifra)
         {
             var nalozi = new List<Nalog>();

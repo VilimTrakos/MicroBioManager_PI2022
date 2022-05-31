@@ -74,6 +74,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.rtxtKomentari = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // MCV
@@ -398,9 +400,9 @@
             // 
             // SaveKr
             // 
-            this.SaveKr.Location = new System.Drawing.Point(370, 296);
+            this.SaveKr.Location = new System.Drawing.Point(152, 310);
             this.SaveKr.Name = "SaveKr";
-            this.SaveKr.Size = new System.Drawing.Size(168, 33);
+            this.SaveKr.Size = new System.Drawing.Size(132, 33);
             this.SaveKr.TabIndex = 40;
             this.SaveKr.Text = "Spremi";
             this.SaveKr.UseVisualStyleBackColor = true;
@@ -424,9 +426,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(370, 348);
+            this.btnClose.Location = new System.Drawing.Point(152, 362);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(168, 27);
+            this.btnClose.Size = new System.Drawing.Size(132, 27);
             this.btnClose.TabIndex = 44;
             this.btnClose.Text = "Zatvori";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -450,11 +452,30 @@
             this.label17.TabIndex = 46;
             this.label17.Text = "Sifra pacijenta:";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(385, 153);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(70, 16);
+            this.label18.TabIndex = 47;
+            this.label18.Text = "Komentari:";
+            // 
+            // rtxtKomentari
+            // 
+            this.rtxtKomentari.Location = new System.Drawing.Point(316, 172);
+            this.rtxtKomentari.Name = "rtxtKomentari";
+            this.rtxtKomentari.Size = new System.Drawing.Size(222, 238);
+            this.rtxtKomentari.TabIndex = 48;
+            this.rtxtKomentari.Text = "";
+            // 
             // FrmKrvnaAnaliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 450);
+            this.Controls.Add(this.rtxtKomentari);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnClose);
@@ -557,5 +578,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RichTextBox rtxtKomentari;
     }
 }

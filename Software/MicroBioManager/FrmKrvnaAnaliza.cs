@@ -23,17 +23,19 @@ namespace MicroBioManager
         {
             InitializeComponent();
             nalog = oznaceniNalog;
+            
         }
         public FrmKrvnaAnaliza()
         {
             InitializeComponent();
         }
-
+        
         private void FrmKrvnaAnaliza_Load(object sender, EventArgs e)
         {
+            var komentari = NalogRepos.GetNalogeId(oznaceniNalog.Id);
             
-            var rezultati = RezultatiRepos.GetRezultati(oznaceniNalog.Id_rezultata);
-           
+            rtxtKomentari.Text = komentari.Komentari;
+            var rezultati = RezultatiRepos.GetRezultati(oznaceniNalog.Id_rezultata); 
             MCV.Text = rezultati.MCV;
             MCH.Text = rezultati.MCH;
             MPV.Text = rezultati.MPV;
@@ -67,7 +69,7 @@ namespace MicroBioManager
 
         private void SaveKr_Click(object sender, EventArgs e)
         {
-           
+            var komentari = rtxtKomentari.Text;
             var mcv = MCV.Text;
             var mch= MCH.Text;
             var mpv= MPV.Text;
@@ -89,6 +91,26 @@ namespace MicroBioManager
             var eritrociti= Eritrociti.Text;
             var leukociti= Leukociti.Text;
             var sifra_pacijenta = Pacijent.Text;
+
+            if (komentari != "")
+            {
+                string sql1 = $"Update NaloziDB SET Komentari = '{komentari}' WHERE Id ={nalog.Id}";
+                DB.SetConfiguration("vtrakosta20_DB", "vtrakosta20", "6}m#UWqL");
+                DB.OpenConnection();
+                DB.ExecuteCommand(sql1);
+                DB.CloseConnection();
+            }
+
+            if (eritrociti != "")
+            {
+                string sql1 = $"Update RezultatiDB SET Sifra_pacijenta = {sifra_pacijenta}, Uzorak ='{"Krv"}', " +
+                    $"Eritrociti ={eritrociti}" +
+                    $"WHERE Id = {nalog.Id_rezultata}";
+                DB.SetConfiguration("vtrakosta20_DB", "vtrakosta20", "6}m#UWqL");
+                DB.OpenConnection();
+                DB.ExecuteCommand(sql1);
+                DB.CloseConnection();
+            }
 
             if (eritrociti != "")
             {
